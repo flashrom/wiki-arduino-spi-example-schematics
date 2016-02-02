@@ -1,0 +1,954 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L CONN_01X06 AD
+U 1 1 56AF59E3
+P 1600 2750
+F 0 "AD" H 1600 3100 50  0000 C CNN
+F 1 "CONN_01X06" V 1700 2750 50  0000 C CNN
+F 2 "" H 1600 2750 50  0000 C CNN
+F 3 "" H 1600 2750 50  0000 C CNN
+	1    1600 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 POWER
+U 1 1 56AF5A6D
+P 1600 1900
+F 0 "POWER" H 1600 2350 50  0000 C CNN
+F 1 "CONN_01X08" V 1700 1900 50  0000 C CNN
+F 2 "" H 1600 1900 50  0000 C CNN
+F 3 "" H 1600 1900 50  0000 C CNN
+	1    1600 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 IOL
+U 1 1 56AF5B14
+P 3150 2650
+F 0 "IOL" H 3150 3100 50  0000 C CNN
+F 1 "CONN_01X08" V 3250 2650 50  0000 C CNN
+F 2 "" H 3150 2650 50  0000 C CNN
+F 3 "" H 3150 2650 50  0000 C CNN
+	1    3150 2650
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X10 IOH
+U 1 1 56AF5B7B
+P 3150 1600
+F 0 "IOH" H 3150 2150 50  0000 C CNN
+F 1 "CONN_01X10" V 3250 1600 50  0000 C CNN
+F 2 "" H 3150 1600 50  0000 C CNN
+F 3 "" H 3150 1600 50  0000 C CNN
+	1    3150 1600
+	-1   0    0    1   
+$EndComp
+Text Notes 1750 1300 0    60   ~ 12
+Arduino Uno/Duemillanove
+Wire Wire Line
+	1250 2150 1400 2150
+Wire Wire Line
+	1400 2050 1250 2050
+Wire Wire Line
+	1400 1950 1250 1950
+Wire Wire Line
+	1250 1850 1400 1850
+Text GLabel 1250 2150 0    60   Input ~ 0
+GND
+Text GLabel 1250 2050 0    60   Input ~ 0
+GND
+Text GLabel 1250 1950 0    60   Input ~ 0
+5V
+Text GLabel 1250 1850 0    60   Input ~ 0
+3.3V
+Wire Wire Line
+	3350 1450 3550 1450
+Text GLabel 3550 1450 2    60   Input ~ 0
+GND
+NoConn ~ 1400 2250
+NoConn ~ 1400 1750
+NoConn ~ 1400 1650
+NoConn ~ 1400 1550
+NoConn ~ 1400 3000
+NoConn ~ 1400 2900
+NoConn ~ 1400 2800
+NoConn ~ 1400 2700
+NoConn ~ 1400 2600
+NoConn ~ 1400 2500
+NoConn ~ 3350 3000
+NoConn ~ 3350 2900
+NoConn ~ 3350 2800
+NoConn ~ 3350 2700
+NoConn ~ 3350 2600
+NoConn ~ 3350 2500
+NoConn ~ 3350 2400
+NoConn ~ 3350 2300
+NoConn ~ 3350 1150
+NoConn ~ 3350 1250
+NoConn ~ 3350 1350
+Wire Wire Line
+	3350 2050 3550 2050
+Text GLabel 3550 2050 2    60   Input ~ 0
+PB0
+NoConn ~ 3350 1950
+Wire Wire Line
+	3350 1850 3550 1850
+Text GLabel 3550 1850 2    60   Input ~ 0
+~CS~
+Wire Wire Line
+	3350 1750 3550 1750
+Wire Wire Line
+	3350 1650 3550 1650
+Wire Wire Line
+	3350 1550 3550 1550
+Text GLabel 3550 1750 2    60   Input ~ 0
+MOSI
+Text GLabel 3550 1650 2    60   Input ~ 0
+MISO
+Text GLabel 3550 1550 2    60   Input ~ 0
+SCK
+Text Notes 6950 1050 2    60   ~ 12
+Resistor-Divider from 5V Circuit
+$Comp
+L DIL8 SPI_FLASH
+U 1 1 56AF662F
+P 2250 4400
+F 0 "SPI_FLASH" H 2250 4650 50  0000 C CNN
+F 1 "DIL8" V 2250 4400 50  0000 C CNN
+F 2 "" H 2250 4400 50  0000 C CNN
+F 3 "" H 2250 4400 50  0000 C CNN
+	1    2250 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56AF6816
+P 1300 2150
+F 0 "#PWR?" H 1300 1900 50  0001 C CNN
+F 1 "GND" H 1300 2000 50  0000 C CNN
+F 2 "" H 1300 2150 50  0000 C CNN
+F 3 "" H 1300 2150 50  0000 C CNN
+	1    1300 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 2150
+$Comp
+L +3.3V #PWR?
+U 1 1 56AF6859
+P 1300 1850
+F 0 "#PWR?" H 1300 1700 50  0001 C CNN
+F 1 "+3.3V" H 1300 1990 50  0000 C CNN
+F 2 "" H 1300 1850 50  0000 C CNN
+F 3 "" H 1300 1850 50  0000 C CNN
+	1    1300 1850
+	1    0    0    -1  
+$EndComp
+Connection ~ 1300 1850
+Wire Wire Line
+	2600 4250 2750 4250
+Wire Wire Line
+	2750 4150 2750 4350
+Wire Wire Line
+	2750 4350 2600 4350
+Connection ~ 2750 4250
+Wire Wire Line
+	1900 4450 1250 4450
+Wire Wire Line
+	1250 4450 1250 4350
+Wire Wire Line
+	1900 4550 1800 4550
+Wire Wire Line
+	1800 4550 1800 4650
+$Comp
+L +3.3V #PWR?
+U 1 1 56AF6948
+P 2750 4150
+F 0 "#PWR?" H 2750 4000 50  0001 C CNN
+F 1 "+3.3V" H 2750 4290 50  0000 C CNN
+F 2 "" H 2750 4150 50  0000 C CNN
+F 3 "" H 2750 4150 50  0000 C CNN
+	1    2750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 56AF696B
+P 1250 4350
+F 0 "#PWR?" H 1250 4200 50  0001 C CNN
+F 1 "+3.3V" H 1250 4490 50  0000 C CNN
+F 2 "" H 1250 4350 50  0000 C CNN
+F 3 "" H 1250 4350 50  0000 C CNN
+	1    1250 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 56AF698E
+P 1800 4650
+F 0 "#PWR?" H 1800 4400 50  0001 C CNN
+F 1 "GND" H 1800 4500 50  0000 C CNN
+F 2 "" H 1800 4650 50  0000 C CNN
+F 3 "" H 1800 4650 50  0000 C CNN
+	1    1800 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 4450 2750 4450
+Wire Wire Line
+	2600 4550 2750 4550
+Wire Wire Line
+	1900 4250 1800 4250
+Wire Wire Line
+	1900 4350 1800 4350
+Text GLabel 2750 4450 2    60   Input ~ 0
+SCK_L
+Text GLabel 2750 4550 2    60   Input ~ 0
+MOSI_L
+Text GLabel 1800 4250 0    60   Input ~ 0
+~CS_L
+Text GLabel 1800 4350 0    60   Input ~ 0
+MISO_L
+Text Notes 1350 3850 0    60   ~ 12
+DIL-8 or SO-8 SPI Flash pinout\nSignal name _L means lowered to 3.3V
+Text Notes 2800 4350 0    60   ~ 0
+~HOLD~ (connect to 3.3V)
+Text Notes 2800 4250 0    60   ~ 0
+VCC
+Text Notes 1350 4450 2    60   ~ 0
+~WP~
+Text Notes 1800 4550 2    60   ~ 0
+GND
+Text Notes 1750 1150 0    60   ~ 12
+Part 1 (version 1):
+Text Notes 5450 900  0    60   ~ 12
+Part 2 (version 1):
+Wire Wire Line
+	6300 1300 6450 1300
+Wire Wire Line
+	6450 1300 6450 1450
+$Comp
+L GND #PWR?
+U 1 1 56AF6DA8
+P 6450 2250
+F 0 "#PWR?" H 6450 2000 50  0001 C CNN
+F 1 "GND" H 6450 2100 50  0000 C CNN
+F 2 "" H 6450 2250 50  0000 C CNN
+F 3 "" H 6450 2250 50  0000 C CNN
+	1    6450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2250 6450 2150
+Wire Wire Line
+	6450 1750 6450 1850
+Wire Wire Line
+	6450 1800 6650 1800
+Connection ~ 6450 1800
+Text GLabel 5300 1300 0    60   Input ~ 0
+~CS~
+Wire Wire Line
+	5300 1300 5450 1300
+Wire Wire Line
+	5450 1300 5450 1450
+$Comp
+L GND #PWR?
+U 1 1 56AF7253
+P 5450 2250
+F 0 "#PWR?" H 5450 2000 50  0001 C CNN
+F 1 "GND" H 5450 2100 50  0000 C CNN
+F 2 "" H 5450 2250 50  0000 C CNN
+F 3 "" H 5450 2250 50  0000 C CNN
+	1    5450 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5450 2250 5450 2150
+Wire Wire Line
+	5450 1750 5450 1850
+Wire Wire Line
+	5450 1800 5650 1800
+Connection ~ 5450 1800
+Text GLabel 5650 1800 2    60   Input ~ 0
+~CS_L
+$Comp
+L R R?
+U 1 1 56AF7351
+P 5450 1600
+F 0 "R?" V 5530 1600 50  0001 C CNN
+F 1 "10k" V 5450 1600 50  0000 C CNN
+F 2 "" V 5380 1600 50  0000 C CNN
+F 3 "" H 5450 1600 50  0000 C CNN
+	1    5450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56AF73B6
+P 5450 2000
+F 0 "R?" V 5530 2000 50  0001 C CNN
+F 1 "15k" V 5450 2000 50  0000 C CNN
+F 2 "" V 5380 2000 50  0000 C CNN
+F 3 "" H 5450 2000 50  0000 C CNN
+	1    5450 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56AF7478
+P 6450 1600
+F 0 "R?" V 6530 1600 50  0001 C CNN
+F 1 "10k" V 6450 1600 50  0000 C CNN
+F 2 "" V 6380 1600 50  0000 C CNN
+F 3 "" H 6450 1600 50  0000 C CNN
+	1    6450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56AF7497
+P 6450 2000
+F 0 "R?" V 6530 2000 50  0001 C CNN
+F 1 "15k" V 6450 2000 50  0000 C CNN
+F 2 "" V 6380 2000 50  0000 C CNN
+F 3 "" H 6450 2000 50  0000 C CNN
+	1    6450 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 6300 1300 0    60   Input ~ 0
+MOSI
+Text GLabel 6650 1800 2    60   Input ~ 0
+MOSI_L
+Text Notes 1350 3600 0    60   ~ 12
+Part 3 (version 1):
+Wire Wire Line
+	7200 1300 7350 1300
+Wire Wire Line
+	7350 1300 7350 1450
+$Comp
+L GND #PWR?
+U 1 1 56AF766B
+P 7350 2250
+F 0 "#PWR?" H 7350 2000 50  0001 C CNN
+F 1 "GND" H 7350 2100 50  0000 C CNN
+F 2 "" H 7350 2250 50  0000 C CNN
+F 3 "" H 7350 2250 50  0000 C CNN
+	1    7350 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7350 2250 7350 2150
+Wire Wire Line
+	7350 1750 7350 1850
+Wire Wire Line
+	7350 1800 7550 1800
+Connection ~ 7350 1800
+$Comp
+L R R?
+U 1 1 56AF7677
+P 7350 1600
+F 0 "R?" V 7430 1600 50  0001 C CNN
+F 1 "10k" V 7350 1600 50  0000 C CNN
+F 2 "" V 7280 1600 50  0000 C CNN
+F 3 "" H 7350 1600 50  0000 C CNN
+	1    7350 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56AF767D
+P 7350 2000
+F 0 "R?" V 7430 2000 50  0001 C CNN
+F 1 "15k" V 7350 2000 50  0000 C CNN
+F 2 "" V 7280 2000 50  0000 C CNN
+F 3 "" H 7350 2000 50  0000 C CNN
+	1    7350 2000
+	1    0    0    -1  
+$EndComp
+Text GLabel 7200 1300 0    60   Input ~ 0
+SCK
+Text GLabel 7550 1800 2    60   Input ~ 0
+SCK_L
+Text Notes 5400 2850 0    60   ~ 0
+Alternative resistor values:\n10k  15k (as above, this is for reference)\n5k   10k (5k = 2 x 10k in parallel)\n2.2k 4.7k
+Text Notes 8650 1400 0    60   ~ 12
+Part 2 (version 2):\nLike version 1 + Open-Collector ~CS~\n\nThis is the pinout used by the SPI part\nof frser-m328lpcspi firmware and the\nassociated shield.\n\nMOSI, MISO and SCK as per version 1
+Text GLabel 9300 2050 0    60   Input ~ 0
+PB0
+Wire Wire Line
+	9300 2050 9600 2050
+$Comp
+L +3.3V #PWR?
+U 1 1 56AF7A9E
+P 9450 1600
+F 0 "#PWR?" H 9450 1450 50  0001 C CNN
+F 1 "+3.3V" H 9450 1740 50  0000 C CNN
+F 2 "" H 9450 1600 50  0000 C CNN
+F 3 "" H 9450 1600 50  0000 C CNN
+	1    9450 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R?
+U 1 1 56AF7B21
+P 9450 1850
+F 0 "R?" V 9530 1850 50  0001 C CNN
+F 1 "4k7" V 9450 1850 50  0000 C CNN
+F 2 "" V 9380 1850 50  0000 C CNN
+F 3 "" H 9450 1850 50  0000 C CNN
+	1    9450 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9450 2050 9450 2000
+Wire Wire Line
+	9450 1700 9450 1600
+Text GLabel 9600 2050 2    60   Input ~ 0
+~CS_L
+Connection ~ 9450 2050
+Text GLabel 6000 5400 0    60   Input ~ 0
+MISO
+Text GLabel 6200 5400 2    60   Input ~ 0
+MISO_L
+Wire Wire Line
+	6000 5400 6200 5400
+Text Notes 5300 3700 0    60   ~ 12
+Part 2 (version 3)\nLevel-translating buffer (4050)\n
+$Comp
+L DIL16 HEF4050B
+U 1 1 56AF8110
+P 6100 4550
+F 0 "HEF4050B" H 6100 5000 50  0000 C CNN
+F 1 "DIL16" V 6100 4550 50  0000 C CNN
+F 2 "" H 6100 4550 50  0000 C CNN
+F 3 "" H 6100 4550 50  0000 C CNN
+	1    6100 4550
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 56AF81F2
+P 5650 4150
+F 0 "#PWR?" H 5650 4000 50  0001 C CNN
+F 1 "+3.3V" H 5650 4290 50  0000 C CNN
+F 2 "" H 5650 4150 50  0000 C CNN
+F 3 "" H 5650 4150 50  0000 C CNN
+	1    5650 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 4150 5650 4200
+Wire Wire Line
+	5650 4200 5750 4200
+$Comp
+L GND #PWR?
+U 1 1 56AF830D
+P 5650 5000
+F 0 "#PWR?" H 5650 4750 50  0001 C CNN
+F 1 "GND" H 5650 4850 50  0000 C CNN
+F 2 "" H 5650 5000 50  0000 C CNN
+F 3 "" H 5650 5000 50  0000 C CNN
+	1    5650 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5650 5000 5650 4900
+Wire Wire Line
+	5650 4900 5750 4900
+Text GLabel 5650 4300 0    60   Input ~ 0
+~CS_L
+Text GLabel 5650 4400 0    60   Input ~ 0
+~CS~
+Wire Wire Line
+	5750 4400 5650 4400
+Wire Wire Line
+	5750 4300 5650 4300
+Text GLabel 6200 3100 0    60   Input ~ 0
+MISO
+Text GLabel 6400 3100 2    60   Input ~ 0
+MISO_L
+Wire Wire Line
+	6200 3100 6400 3100
+Text GLabel 5650 4500 0    60   Input ~ 0
+MOSI_L
+Wire Wire Line
+	5650 4500 5750 4500
+Text GLabel 5650 4600 0    60   Input ~ 0
+MOSI
+Wire Wire Line
+	5650 4600 5750 4600
+Text GLabel 5650 4700 0    60   Input ~ 0
+SCK_L
+Wire Wire Line
+	5750 4700 5650 4700
+Text GLabel 5650 4800 0    60   Input ~ 0
+SCK
+Wire Wire Line
+	5650 4800 5750 4800
+Text Notes 5750 4300 0    60   ~ 0
+1Y
+Text Notes 5750 4400 0    60   ~ 0
+1A
+Text Notes 5750 4500 0    60   ~ 0
+2Y
+Text Notes 5750 4600 0    60   ~ 0
+2A
+Text Notes 5750 4700 0    60   ~ 0
+3Y
+Text Notes 5750 4800 0    60   ~ 0
+3A
+NoConn ~ 6450 4500
+NoConn ~ 6450 4200
+Text Notes 6350 4900 0    60   ~ 0
+4A
+Text Notes 6350 4800 0    60   ~ 0
+4Y
+Text Notes 6350 4700 0    60   ~ 0
+5A
+Text Notes 6350 4600 0    60   ~ 0
+5Y
+Text Notes 6350 4400 0    60   ~ 0
+6A
+Text Notes 6350 4300 0    60   ~ 0
+6Y
+Text Notes 5250 5750 0    60   ~ 0
+Input nA is copied to output nY (at 3.3V),\npinout optimization is allowed :)
+Wire Notes Line
+	4650 650  4650 3250
+Wire Notes Line
+	4650 3250 8050 3250
+Wire Notes Line
+	8050 3250 8050 650 
+Wire Notes Line
+	8050 650  4650 650 
+Wire Notes Line
+	8300 550  8300 2300
+Wire Notes Line
+	8300 2300 10650 2300
+Wire Notes Line
+	10650 2300 10650 550 
+Wire Notes Line
+	10650 550  8300 550 
+Wire Notes Line
+	4700 3400 4700 5950
+Wire Notes Line
+	4700 5950 7350 5950
+Wire Notes Line
+	7350 5950 7350 3400
+Wire Notes Line
+	7350 3400 4700 3400
+Wire Notes Line
+	950  3450 950  5500
+Wire Notes Line
+	950  5500 4300 5500
+Wire Notes Line
+	4300 5500 4300 3450
+Wire Notes Line
+	4300 3450 950  3450
+Text Notes 1150 5300 0    60   ~ 0
+Note: MISO_L is output from flash chip and usually attached\ndirectly to MISO, but is seperated to allow for descriptions\nof buffering in both directions.
+Text GLabel 1650 6850 0    60   Input ~ 0
+~CS_L
+$Comp
+L DIL16 SPI_FLASH16
+U 1 1 56AFB98A
+P 2150 6600
+F 0 "SPI_FLASH16" H 2150 7050 50  0000 C CNN
+F 1 "SOIC-16" V 2150 6600 50  0000 C CNN
+F 2 "" H 2150 6600 50  0000 C CNN
+F 3 "" H 2150 6600 50  0000 C CNN
+	1    2150 6600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6850 1650 6850
+Text GLabel 1650 6950 0    60   Input ~ 0
+MISO_L
+Wire Wire Line
+	1650 6950 1800 6950
+Wire Wire Line
+	2500 6850 2700 6850
+Wire Wire Line
+	2700 6850 2700 7050
+$Comp
+L GND #PWR?
+U 1 1 56AFBC6E
+P 2700 7050
+F 0 "#PWR?" H 2700 6800 50  0001 C CNN
+F 1 "GND" H 2700 6900 50  0000 C CNN
+F 2 "" H 2700 7050 50  0000 C CNN
+F 3 "" H 2700 7050 50  0000 C CNN
+	1    2700 7050
+	1    0    0    -1  
+$EndComp
+$Comp
+L +3.3V #PWR?
+U 1 1 56AFBCDB
+P 2850 6750
+F 0 "#PWR?" H 2850 6600 50  0001 C CNN
+F 1 "+3.3V" H 2850 6890 50  0000 C CNN
+F 2 "" H 2850 6750 50  0000 C CNN
+F 3 "" H 2850 6750 50  0000 C CNN
+	1    2850 6750
+	1    0    0    -1  
+$EndComp
+Text Notes 2550 6950 2    60   ~ 0
+~WP~
+Text Notes 2600 6850 2    60   ~ 0
+GND
+Wire Wire Line
+	2500 6950 2850 6950
+Wire Wire Line
+	2850 6950 2850 6750
+Text GLabel 2650 6350 2    60   Input ~ 0
+MOSI_L
+Wire Wire Line
+	2500 6350 2650 6350
+Text GLabel 2650 6250 2    60   Input ~ 0
+SCK_L
+Wire Wire Line
+	2500 6250 2650 6250
+Text Notes 1800 6350 2    60   ~ 0
+VCC
+Text Notes 1800 6250 2    60   ~ 0
+~HOLD~
+$Comp
+L +3.3V #PWR?
+U 1 1 56AFC109
+P 1450 6150
+F 0 "#PWR?" H 1450 6000 50  0001 C CNN
+F 1 "+3.3V" H 1450 6290 50  0000 C CNN
+F 2 "" H 1450 6150 50  0000 C CNN
+F 3 "" H 1450 6150 50  0000 C CNN
+	1    1450 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1800 6250 1450 6250
+Wire Wire Line
+	1450 6150 1450 6350
+Wire Wire Line
+	1450 6350 1800 6350
+Connection ~ 1450 6250
+NoConn ~ 1800 6450
+NoConn ~ 1800 6550
+NoConn ~ 1800 6650
+NoConn ~ 1800 6750
+NoConn ~ 2500 6750
+NoConn ~ 2500 6650
+NoConn ~ 2500 6550
+NoConn ~ 2500 6450
+Text Notes 1400 5700 0    60   ~ 12
+Part 3 (version 2):
+Text Notes 1400 5850 0    60   ~ 12
+SOIC-16 SPI Flash pinout\n
+Wire Notes Line
+	950  5550 3350 5550
+Wire Notes Line
+	3350 5550 3350 7350
+Wire Notes Line
+	3350 7350 950  7350
+Wire Notes Line
+	950  7350 950  5550
+Wire Notes Line
+	950  3350 4000 3350
+$Comp
+L CONN_01X08 POWERM
+U 1 1 56AFCF29
+P 8900 3300
+F 0 "POWERM" H 8900 3750 50  0000 C CNN
+F 1 "CONN_01X08" V 9000 3300 50  0000 C CNN
+F 2 "" H 8900 3300 50  0000 C CNN
+F 3 "" H 8900 3300 50  0000 C CNN
+	1    8900 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L CONN_01X08 IOLM
+U 1 1 56AFCF2F
+P 10450 4050
+F 0 "IOLM" H 10450 4500 50  0000 C CNN
+F 1 "CONN_01X08" V 10550 4050 50  0000 C CNN
+F 2 "" H 10450 4050 50  0000 C CNN
+F 3 "" H 10450 4050 50  0000 C CNN
+	1    10450 4050
+	-1   0    0    1   
+$EndComp
+$Comp
+L CONN_01X10 IOHM
+U 1 1 56AFCF35
+P 10450 3000
+F 0 "IOHM" H 10450 3550 50  0000 C CNN
+F 1 "CONN_01X10" V 10550 3000 50  0000 C CNN
+F 2 "" H 10450 3000 50  0000 C CNN
+F 3 "" H 10450 3000 50  0000 C CNN
+	1    10450 3000
+	-1   0    0    1   
+$EndComp
+Text Notes 9150 2800 0    60   ~ 12
+Arduino Mega/Mega2560
+Wire Wire Line
+	8550 3550 8700 3550
+Wire Wire Line
+	8700 3450 8550 3450
+Wire Wire Line
+	8700 3350 8550 3350
+Wire Wire Line
+	8550 3250 8700 3250
+Text GLabel 8550 3550 0    60   Input ~ 0
+GND
+Text GLabel 8550 3450 0    60   Input ~ 0
+GND
+Text GLabel 8550 3350 0    60   Input ~ 0
+5V
+Text GLabel 8550 3250 0    60   Input ~ 0
+3.3V
+NoConn ~ 8700 3650
+NoConn ~ 8700 3150
+NoConn ~ 8700 3050
+NoConn ~ 8700 2950
+NoConn ~ 8700 4400
+NoConn ~ 8700 4300
+NoConn ~ 8700 4200
+NoConn ~ 8700 4100
+NoConn ~ 8700 4000
+NoConn ~ 8700 3900
+NoConn ~ 10650 4400
+NoConn ~ 10650 4300
+NoConn ~ 10650 4200
+NoConn ~ 10650 4100
+NoConn ~ 10650 4000
+NoConn ~ 10650 3900
+NoConn ~ 10650 3800
+NoConn ~ 10650 3700
+NoConn ~ 10650 2550
+NoConn ~ 10650 2650
+NoConn ~ 10650 2750
+NoConn ~ 10650 3350
+$Comp
+L GND #PWR?
+U 1 1 56AFCF67
+P 8600 3550
+F 0 "#PWR?" H 8600 3300 50  0001 C CNN
+F 1 "GND" H 8600 3400 50  0000 C CNN
+F 2 "" H 8600 3550 50  0000 C CNN
+F 3 "" H 8600 3550 50  0000 C CNN
+	1    8600 3550
+	1    0    0    -1  
+$EndComp
+Connection ~ 8600 3550
+$Comp
+L +3.3V #PWR?
+U 1 1 56AFCF6E
+P 8600 3250
+F 0 "#PWR?" H 8600 3100 50  0001 C CNN
+F 1 "+3.3V" H 8600 3390 50  0000 C CNN
+F 2 "" H 8600 3250 50  0000 C CNN
+F 3 "" H 8600 3250 50  0000 C CNN
+	1    8600 3250
+	1    0    0    -1  
+$EndComp
+Connection ~ 8600 3250
+Text Notes 9150 2600 0    60   ~ 12
+Part 1 (version 2):
+NoConn ~ 10650 3450
+NoConn ~ 10650 3250
+NoConn ~ 10650 3150
+NoConn ~ 10650 3050
+NoConn ~ 10650 2950
+NoConn ~ 10650 2850
+$Comp
+L CONN_01X08 ADCL
+U 1 1 56AFD1BA
+P 8900 4250
+F 0 "ADCL" H 8900 4700 50  0000 C CNN
+F 1 "CONN_01X08" V 9000 4250 50  0000 C CNN
+F 2 "" H 8900 4250 50  0000 C CNN
+F 3 "" H 8900 4250 50  0000 C CNN
+	1    8900 4250
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 4500
+NoConn ~ 8700 4600
+$Comp
+L CONN_01X08 ADCH
+U 1 1 56AFD26A
+P 8900 5150
+F 0 "ADCH" H 8900 5600 50  0000 C CNN
+F 1 "CONN_01X08" V 9000 5150 50  0000 C CNN
+F 2 "" H 8900 5150 50  0000 C CNN
+F 3 "" H 8900 5150 50  0000 C CNN
+	1    8900 5150
+	1    0    0    -1  
+$EndComp
+NoConn ~ 8700 4800
+NoConn ~ 8700 4900
+NoConn ~ 8700 5000
+NoConn ~ 8700 5100
+NoConn ~ 8700 5200
+NoConn ~ 8700 5300
+NoConn ~ 8700 5400
+NoConn ~ 8700 5500
+$Comp
+L CONN_01X08 COMM
+U 1 1 56AFD486
+P 10450 4950
+F 0 "COMM" H 10450 5400 50  0000 C CNN
+F 1 "CONN_01X08" V 10550 4950 50  0000 C CNN
+F 2 "" H 10450 4950 50  0000 C CNN
+F 3 "" H 10450 4950 50  0000 C CNN
+	1    10450 4950
+	-1   0    0    1   
+$EndComp
+NoConn ~ 10650 4600
+NoConn ~ 10650 4700
+NoConn ~ 10650 4800
+NoConn ~ 10650 4900
+NoConn ~ 10650 5000
+NoConn ~ 10650 5100
+NoConn ~ 10650 5200
+NoConn ~ 10650 5300
+$Comp
+L CONN_02X18 XIO
+U 1 1 56AFD7A0
+P 9750 5900
+F 0 "XIO" H 9750 6850 50  0000 C CNN
+F 1 "CONN_02X18" V 9750 5900 50  0001 C CNN
+F 2 "" H 9750 4850 50  0000 C CNN
+F 3 "" H 9750 4850 50  0000 C CNN
+	1    9750 5900
+	0    1    1    0   
+$EndComp
+Text GLabel 8850 6200 0    60   Input ~ 0
+GND
+Text GLabel 8850 5600 0    60   Input ~ 0
+GND
+Wire Wire Line
+	8850 5600 8900 5600
+Wire Wire Line
+	8900 5600 8900 5650
+Text GLabel 10650 5600 2    60   Input ~ 0
+5V
+Text GLabel 10650 6200 2    60   Input ~ 0
+5V
+Wire Wire Line
+	10650 6200 10600 6200
+Wire Wire Line
+	10600 6200 10600 6150
+Wire Wire Line
+	10650 5600 10600 5600
+Wire Wire Line
+	10600 5600 10600 5650
+Text GLabel 9150 5400 2    60   Input ~ 0
+SCK
+Wire Wire Line
+	9000 5650 9000 5400
+Wire Wire Line
+	9000 5400 9150 5400
+Text GLabel 9150 5550 2    60   Input ~ 0
+MISO
+Wire Wire Line
+	9100 5650 9100 5550
+Wire Wire Line
+	9100 5550 9150 5550
+Text GLabel 8950 6350 0    60   Input ~ 0
+~CS~
+Wire Wire Line
+	9000 6350 9000 6150
+Text GLabel 9150 6250 2    60   Input ~ 0
+MOSI
+Wire Wire Line
+	8850 6200 8900 6200
+Wire Wire Line
+	8900 6200 8900 6150
+Wire Wire Line
+	9000 6350 8950 6350
+Wire Wire Line
+	9150 6250 9100 6250
+Wire Wire Line
+	9100 6250 9100 6150
+NoConn ~ 9200 5650
+NoConn ~ 9300 5650
+NoConn ~ 9400 5650
+NoConn ~ 9500 5650
+NoConn ~ 9600 5650
+NoConn ~ 9700 5650
+NoConn ~ 9800 5650
+NoConn ~ 9900 5650
+NoConn ~ 10000 5650
+NoConn ~ 10100 5650
+NoConn ~ 10200 5650
+NoConn ~ 10300 5650
+NoConn ~ 10400 5650
+NoConn ~ 10500 5650
+NoConn ~ 10500 6150
+NoConn ~ 10400 6150
+NoConn ~ 10300 6150
+NoConn ~ 10200 6150
+NoConn ~ 10100 6150
+NoConn ~ 10000 6150
+NoConn ~ 9900 6150
+NoConn ~ 9800 6150
+NoConn ~ 9700 6150
+NoConn ~ 9600 6150
+NoConn ~ 9500 6150
+NoConn ~ 9400 6150
+NoConn ~ 9300 6150
+NoConn ~ 9200 6150
+Wire Notes Line
+	8200 2450 8200 6450
+Wire Notes Line
+	8200 6450 10900 6450
+Wire Notes Line
+	10900 6450 10900 2450
+Wire Notes Line
+	10900 2450 8200 2450
+Wire Notes Line
+	950  3350 950  1000
+Wire Notes Line
+	950  1000 4000 1000
+Wire Notes Line
+	4000 1000 4000 3350
+$EndSCHEMATC
