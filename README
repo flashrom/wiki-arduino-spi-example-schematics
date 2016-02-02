@@ -1,0 +1,15 @@
+The process used
+
+1. Edit the schematic in kicad
+2. Plot as pdf
+3. Open pdf in google chrome, set 150% zoom
+4. Screenshot the individual elements (import thing.png)
+5. Crop the images (gimp *.png)
+6. pngcrush and optipng the pngs
+7. Upload to wiki...
+
+Obviously all of it isnt 100% necessary, but this is
+just a document to make it known how these were made.
+
+The result in the wiki:
+https://www.flashrom.org/Serprog/Arduino_flasher
